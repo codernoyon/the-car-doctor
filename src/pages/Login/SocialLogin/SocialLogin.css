@@ -1,0 +1,24 @@
+.social-login{
+    position:relative;
+    color: #6b6b6bab;
+
+}
+
+.social-login::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background: #6b6b6b6e;
+    left: 40px;
+    bottom: 10px;
+}
+.social-login::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background: #6b6b6b6e;
+    right: 40px;
+    bottom: 10px;
+}
