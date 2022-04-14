@@ -9,8 +9,8 @@ const SignUp = () => {
     }
 
     return (
-        <div className='h-screen flex justify-center items-center -z-10'>
-            <form onSubmit={handleSubmit} className='w-5/6 md:w-3/6 lg:w-2/6 bg-white shadow-lg py-5 px-5 rounded-md border border-gray-100'>
+        <div className='px-5 sm:px-16 md:px-0 h-screen flex justify-center items-center -z-10'>
+            <form onSubmit={handleSubmit} className='w-full md:w-3/6 lg:w-2/6 bg-white shadow-lg py-5 px-5 rounded-md border border-gray-100'>
                 <h3 className="text-2xl md:text-3xl text-center mb-4">Sign Up</h3>
                 <div className="space-y-4">
                     <input className='text-lg bg-gray-50 block w-full p-3 rounded-md outline-none focus:tracking-wider duration-200' placeholder='Name' type="text" name='name' required />
