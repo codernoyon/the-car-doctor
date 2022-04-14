@@ -26,6 +26,7 @@ header{
 .link{
     transition: .3s;
     color: rgba(250, 250, 250, 0.781);
+    text-decoration: none;
 }
 
 .link:hover{
