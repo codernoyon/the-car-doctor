@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const Slider = () => {
 	return (
 		<div>
-			<h2>Slider</h2>
+			
 		</div>
 	);
 };
