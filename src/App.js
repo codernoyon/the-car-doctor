@@ -13,6 +13,7 @@ import Checkout from './pages/Checkout/Checkout';
 import ManageService from './pages/ManageService/ManageService';
 import RequireAuth from './pages/RequireAuth/RequireAuth';
 import AddService from './pages/AddService/AddService';
+import Footer from './shared/Footer/Footer';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
