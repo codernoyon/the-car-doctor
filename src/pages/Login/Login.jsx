@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SocialLogin from '../SocialLogin/SocialLogin';
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
+
 
 
 const Login = () => {

@@ -2,21 +2,24 @@ import React from 'react';
 import { FcGoogle,  } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 import './SocialLogin.css'
-import auth from '../../../Firebase/Firebase.init';
+import auth from '../../Firebase/Firebase.init';
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 const SocialLogin = () => {
-	const navigate = useNavigate()
+	const navigate = useNavigate();
+	const location = useLocation();
 
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
 	
-    console.log(user);
+	
+	let from = location.state?.from?.pathname || "/";
+
 
 	if(user){
-		navigate('/');
-		toast.success('Successfully Login')
+		navigate(from, { replace: true });
+		toast.success('Successfully Login' , { id: "login" })
 	}
 
     return (
